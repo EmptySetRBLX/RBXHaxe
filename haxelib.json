@@ -1,0 +1,9 @@
+{
+	"name" : "RBXHaxe",
+	"url" : "https://google.com",
+	"license" : "Nah",
+	"contributors" : ["EmptySet"],
+	"description" : "Roblox external library support.",
+	"version" : "0.0.1",
+	"releasenote" : ""
+}
