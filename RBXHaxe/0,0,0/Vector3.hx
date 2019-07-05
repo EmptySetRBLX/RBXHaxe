@@ -1,7 +1,16 @@
 import haxe.extern.EitherType;
 extern class Vector3
 {
+    public var X:Float;
+    public var Y:Float;
+    public var Z:Float;
+    public var Magnitude:Float;
+    public var Unit:Vector3;
+    
 	function new(x:Float, y:Float, z:Float);
+
+    public static function FromNormalId(normal:EnumItem):Vector3;
+    public static function FromAxis(axis:EnumItem):Vector3;
 
     inline function add(b:Vector3):Vector3 {
         return untyped __lua__("{0} + {1}", this, b);

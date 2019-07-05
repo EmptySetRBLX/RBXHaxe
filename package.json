@@ -1,0 +1,28 @@
+{
+  "name": "rbxhaxe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "externGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OTRD5k/RBXHaxe.git"
+  },
+  "keywords": [
+    "Haxe",
+    "Roblox"
+  ],
+  "author": "EmptySet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OTRD5k/RBXHaxe/issues"
+  },
+  "homepage": "https://github.com/OTRD5k/RBXHaxe#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "rimraf": "^2.6.3",
+    "string-to-stream": "^2.0.0"
+  }
+}

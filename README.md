@@ -1,3 +1,5 @@
-Just a barebones proof of concept.
+run npm install, node externGenerator.js
 
-Has the instance, CFrame, and Vector3 API implemented.
+copy the contents of the rbxHaxeGenerated folder into RBXHaxe/version number
+
+Zip it up, haxelib install the sucker
