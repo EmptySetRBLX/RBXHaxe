@@ -23,7 +23,7 @@ module.exports = class Class{
 
     getReadStream()
     {
-        let file = "import lua.Table;\nimport haxe.extern.Rest;\n\n";
+        let file = "import lua.Table;\nimport haxe.extern.Rest;\nimport haxe.Int64;\n\n";
         if(this.Parent !== null)
         {
             file = file + "extern class " + this.Name + " extends " + this.Parent + "\n";

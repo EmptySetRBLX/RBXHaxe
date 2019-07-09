@@ -1,9 +1,10 @@
 {
 	"name" : "RBXHaxe",
-	"url" : "https://google.com",
-	"license" : "Nah",
+	"url" : "https://github.com/OTRD5k/RBXHaxe",
+	"tags": ["Lua", "Roblox"],
+	"license" : "MIT",
 	"contributors" : ["EmptySet"],
 	"description" : "Roblox external library support.",
-	"version" : "0.0.1",
+	"version" : "0.0.2",
 	"releasenote" : ""
 }
