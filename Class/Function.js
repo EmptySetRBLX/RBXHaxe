@@ -113,6 +113,9 @@ module.exports = class Class{
             case "Enum":
                 return "EnumItem";
             case "Class":
+                if(returnType.Name == "Instance") {
+                    return "Dynamic"
+                }
                 return returnType.Name;
             case "Group":
                 switch(returnType.Name)
