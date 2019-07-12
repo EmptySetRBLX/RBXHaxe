@@ -42,7 +42,10 @@ module.exports = class Class{
                     if(json.ValueType.Name == "Content")
                     {
                         this.Line = "public var " + json.Name + ":String;";
-                    }else
+                    }else if(json.ValueType.Name == "ProtectedString"){
+                        this.Line = "public var " + json.Name + ":String;";
+                    }
+                    else
                     {
                         this.Line = "public var " + json.Name + ":" + json.ValueType.Name + ";";
                     }
