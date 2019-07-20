@@ -7,6 +7,10 @@ extern class Instance
 	public var Parent:Instance;
 	public var RobloxLocked:Bool;
 
+	static inline function newInstance(name:String):Dynamic {
+		return untyped __lua__("Instance.new({0})", name);
+	}
+
 	function new(name:String);
 	function ClearAllChildren():Void;
 	function Clone():Instance;
