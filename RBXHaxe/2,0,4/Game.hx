@@ -16,6 +16,7 @@ extern class Game
     public static var GraphicsQualityChangeRequest:RBXScriptSignal;
     public static var Loaded:RBXScriptSignal;
 
+	public static function GetService(serviceName:String):Dynamic;
     public static function BindToClose(func:Function):Void;
     public static function GetJobIntervalPeakFraction(jobName:String, greaterThan:Float):Float;
     public static function GetJobTimePeakFraction(jobName:String, greaterThan:Float):Float;
