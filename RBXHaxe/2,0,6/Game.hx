@@ -2,7 +2,7 @@ import haxe.Int64;
 import haxe.Constraints.Function;
 
 @:native("game")
-extern class Game
+extern class Game extends Instance
 {
     public static var CreatorId:Int64;
     public static var CreatorType:EnumItem;

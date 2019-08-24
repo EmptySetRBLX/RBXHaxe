@@ -13,22 +13,22 @@ extern class Instance
 
 	function new(name:String);
 	function ClearAllChildren():Void;
-	function Clone():Instance;
+	function Clone():Dynamic;
 	function Destroy():Void;
-	function FindFirstAncestor(name:String):Instance;
-	function FindFirstAncestorOfClass(className:String):Instance;
-	function FindFirstAncestorWhichIsA(className:String):Instance;
-	function FindFirstChild(name:String, ?recursive:Bool):Instance;
-	function FindFirstChildOfClass(name:String):Instance;
-	function FindFirstChildWhichIsA(className:String, ?recursive:Bool):Instance;
-	function GetChildren():Map<Int, Instance>;
-	function GetDescendants():Map<Int, Instance>;
+	function FindFirstAncestor(name:String):Dynamic;
+	function FindFirstAncestorOfClass(className:String):Dynamic;
+	function FindFirstAncestorWhichIsA(className:String):Dynamic;
+	function FindFirstChild(name:String, ?recursive:Bool):Dynamic;
+	function FindFirstChildOfClass(name:String):Dynamic;
+	function FindFirstChildWhichIsA(className:String, ?recursive:Bool):Dynamic;
+	function GetChildren():Map<Int, Dynamic>;
+	function GetDescendants():Map<Int, Dynamic>;
 	function GetFullName():String;
 	function GetPropertyChangedSignal(property:String):RBXScriptSignal;
 	function IsA(className:String):Bool;
 	function IsAncestorOf(descendant:Instance):Bool;
 	function IsDescendantOf(ancestor:Instance):Bool;
-	function WaitForChild(childName:String, ?timeOut:Float):Instance;
+	function WaitForChild(childName:String, ?timeOut:Float):Dynamic;
 
 	public var AncestoryChanged:RBXScriptSignal;
 	public var Changed:RBXScriptSignal;
