@@ -139,6 +139,9 @@ module.exports = class Class{
     parseParameter(param)
     {
         var name = param.Name;
+        if(name == "function" || name == "Function") {
+            name = "func";
+        }
         var line = name + ":";
         if(param.Type.Category == "DataType")
         {
