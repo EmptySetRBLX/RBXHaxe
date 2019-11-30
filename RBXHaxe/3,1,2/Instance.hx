@@ -1,3 +1,5 @@
+import lua.Table;
+
 extern class Instance
 {
 	public var Archivable:Bool; 
@@ -21,8 +23,8 @@ extern class Instance
 	function FindFirstChild(name:String, ?recursive:Bool):Dynamic;
 	function FindFirstChildOfClass(name:String):Dynamic;
 	function FindFirstChildWhichIsA(className:String, ?recursive:Bool):Dynamic;
-	function GetChildren():Map<Int, Dynamic>;
-	function GetDescendants():Map<Int, Dynamic>;
+	function GetChildren():AnyTable;
+	function GetDescendants():AnyTable;
 	function GetFullName():String;
 	function GetPropertyChangedSignal(property:String):RBXScriptSignal;
 	function IsA(className:String):Bool;

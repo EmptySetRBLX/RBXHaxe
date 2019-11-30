@@ -1,3 +1,5 @@
+import lua.Table;
+
 extern class DockWidgetPluginGuiInfo
 {	
 	public var InitialEnabled:Bool;

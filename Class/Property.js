@@ -24,10 +24,8 @@ module.exports = class Class{
                             json.ValueType.Name = "String";
                             break;
                         case "int":
-                            json.ValueType.Name = "Int";
-                            break;
                         case "int64":
-                            json.ValueType.Name = "Int64";
+                            json.ValueType.Name = "Int";
                             break;
                         case "float":
                         case "double":

@@ -1,3 +1,5 @@
+import lua.Table;
+
 extern class UDim{
     public var Scale:Float;
     public var Offset:Int;

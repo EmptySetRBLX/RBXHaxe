@@ -16,7 +16,7 @@ module.exports = class Class{
 
     getReadStream()
     {
-        let file = "@:native(\"Enum." + this.Name + "\")\n";
+        let file = "@:native(\"RBXEnum." + this.Name + "\")\n";
         file = writeLine(file, "extern class " + this.Name);
         file = writeLine(file, "{");
         for (var i=0; i<this.ItemsJson.length; i++)

@@ -1,4 +1,6 @@
 import haxe.extern.Rest;
+import lua.Table;
+
 extern class NumberSequenceKeypoint
 {	
     public var Envelope:Float;

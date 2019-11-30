@@ -1,3 +1,5 @@
+import lua.Table;
+
 extern class ColorSequenceKeypoint
 {	
 	public var Time:Float;

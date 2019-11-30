@@ -1,4 +1,6 @@
 import haxe.extern.EitherType;
+import lua.Table;
+
 extern class Vector3
 {
     public var X:Float;

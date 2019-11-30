@@ -1,5 +1,7 @@
 import haxe.extern.EitherType;
+import lua.Table;
 import haxe.extern.Rest;
+
 extern class Random{
 
     function new(seed:EitherType<Float, Void>);

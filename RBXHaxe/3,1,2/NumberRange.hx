@@ -1,4 +1,6 @@
 import haxe.extern.Rest;
+import lua.Table;
+
 extern class NumberRange
 {	
     public var Min:Float;

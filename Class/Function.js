@@ -86,9 +86,8 @@ module.exports = class Class{
                     case "string":
                         return "String";
                     case "int":
-                        return "Int";
                     case "int64":
-                        return "Int64";
+                        return "Int";
                     case "float":
                     case "double":
                         return "Float";
@@ -142,6 +141,9 @@ module.exports = class Class{
         if(name == "function" || name == "Function") {
             name = "func";
         }
+        if(name == "override" || name == "override") {
+            name = "overrideArg";
+        }
         var line = name + ":";
         if(param.Type.Category == "DataType")
         {
@@ -171,10 +173,8 @@ module.exports = class Class{
                     line = line + "String";
                     return line;
                 case "int":
-                    line = line + "Int";
-                    return line;
                 case "int64":
-                    line = line + "Int64";
+                    line = line + "Int";
                     return line;
                 case "float":
                 case "double":

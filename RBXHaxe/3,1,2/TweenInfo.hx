@@ -1,3 +1,5 @@
+import lua.Table;
+
 extern class TweenInfo
 {
     public var EasingDirection:EnumItem;

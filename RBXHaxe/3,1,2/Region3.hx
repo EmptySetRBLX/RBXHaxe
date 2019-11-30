@@ -1,3 +1,5 @@
+import lua.Table;
+
 extern class Region3
 {
     public var CFrame:CFrame;
