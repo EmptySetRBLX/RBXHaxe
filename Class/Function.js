@@ -149,6 +149,7 @@ module.exports = class Class{
         {
             switch(param.Type.Name)
             {
+                case "OverlapParams":
                 case "Objects":
                     line = line + "AnyTable";
                     return line;

@@ -28,7 +28,7 @@ module.exports = class Class{
         if(this.Parent !== null)
         {
             file = file + "extern class " + this.Name + " extends " + this.Parent + "\n";
-        }else{
+        } else {
             file = file + "extern class " + this.Name + "\n";
         }
 
@@ -36,13 +36,18 @@ module.exports = class Class{
 
         for(let i=0; i < this.Properties.length; i++)
         {
-            file = writeLine(file, "\t" + this.Properties[i].getLine())
+            if (this.Properties[i].getLine() !== null) {
+                file = writeLine(file, "\t" + this.Properties[i].getLine())
+            }
         }
         for(let i=0; i < this.Functions.length; i++)
         {
-            file = writeLine(file, "\t" + this.Functions[i].getLine());
+            if (this.Functions[i].getLine() !== null) {
+                file = writeLine(file, "\t" + this.Functions[i].getLine());
+            }
         }
         file = writeLine(file, "}");
+
         return strStream(file);
     }
 
